@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var total = 0;
         var expenseItems = document.querySelectorAll('.expense-item');
         expenseItems.forEach(function (item) {
-            var amountText = item.querySelector('.expense-amount').textContent;
+            var amountText = item.querySelector('span:nth-child(2)').textContent;
             total += parseFloat(amountText.substring(1));
         });
         return total;
