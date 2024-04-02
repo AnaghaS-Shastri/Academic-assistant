@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Tracker</title>
+    <link rel="stylesheet" href="examtracker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Tracker</h1>
+        <form id="exam-form">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="date">Exam Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="button" id="add-details-btn">Add Extra Details</button>
+            <div id="extra-details"></div>
+            <button type="submit" id="add-exam-btn">Add Exam</button>
+        </form>
+    </div>
+
+    <script src="examtracker.js"></script>
+</body>
+</html>
