@@ -7,29 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Varun's Academic Assistant</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="attendance/attendance.html">Attendance</a></li>
-                <li><a href="deadline/deadline.html">Deadline</a></li>
-                <li><a href="expense.html">Expense</a></li>
-                <li><a href="examtracker/examtracker.html">Exam Tracker</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>User Information</h2>
-            <p>Name: Varun</p>
-            <p>College: UVCE</p>
-            <p>Branch: Computer Science</p>
-            <p>Semester: 5</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Varun's Academic Assistant</p>
-    </footer>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <form action="#">
+        <h3>Login</h3>
+     
+        <div class="input">
+            <span>Gmail</span>
+            <input type="gmail" name="" required>
+        </div>
+    
+        <div class="input">
+            <span>Password</span>
+            <input type="password" name="" required>
+        </div>
+    
+        <div class="remember-me">
+            <label>
+                <input type="checkbox" name="">Remember me?
+            </label>
+        </div>
+    
+        <div class="input">
+            <p>Don't have an account? <a href="#">Create One</a> </p>
+        </div>
+    
+        <div class="input">
+            <button id = "google-login-btn" class="google-button">
+                <i class="fab fa-google"></i> Login with Google
+            </button>
+        </div>
+    </form>
+    <script src="register.js" defer type="module" ></script>
 </body>
 </html>
