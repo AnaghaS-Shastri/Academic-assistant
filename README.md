@@ -38,32 +38,31 @@ Save valuable time by automating attendance tracking, allowing you to focus on m
 
 
 
-### We're passionate about helping you achieve your full potential. Download "ACADEMIC-ASSISTANT today and embark on a journey of streamlined productivity and accomplishment!
-
+### We're passionate about helping you achieve your full potential. 
 
 ## Prerequisites:
  
- ### Fronthend: Java Script,HTML and CSS.
- ### Backhend: Google Firebase.
+ ### Frontend: Java Script,HTML and CSS.
+ ### Backend: Google Firebase.
 
 
-Upon launching the app, you'll be presented with a login screen. Enter your Gmail ID to sign in.
+Upon launching th, you'll be presented with a login screen. Enter your Gmail ID to sign in.
 The home page displays an overview of upcoming exams, recent expenses, and attendance data.
 Tap on "Exam Tracker" to view a detailed list of exams, set reminders, and mark completed exams.
 Use the "Expenses" section to record and categorize your spending.
 The "Attendance" page shows your attendance records and allows you to view class schedules.
 
 <div style="display: flex; flex-wrap: wrap;">
-<img src style="width:200px; margin-right: 10px;">"C:\Users\HP\Downloads\photo1.jpeg"</img src>
-<img src style="width:200px; margin-right: 10px;">"C:\Users\HP\Downloads\photo2.jpeg"</img src>        
-<img src style="width:200px; margin-right: 10px;">"C:\Users\HP\Downloads\photo3.jpeg"</img src>         
-<img src style="width:200px; margin-right: 10px;">"C:\Users\HP\Downloads\photo4.jpeg"</img src>        
-<img src style="width:200px; margin-right: 10px;">"C:\Users\HP\Downloads\photo5.jpeg"</img src>             
+<img src style="width:200px; margin-right: 10px;">"assests/photo1.jpeg"</img src>
+<img src style="width:200px; margin-right: 10px;">"assests/photo2.jpeg"</img src>        
+<img src style="width:200px; margin-right: 10px;">"assests/photo3.jpeg"</img src>         
+<img src style="width:200px; margin-right: 10px;">"assests/photo4.jpeg"</img src>        
+<img src style="width:200px; margin-right: 10px;">"assests/photo5.jpeg"</img src>             
 </dev>
 
 ### Contributing:
 
-We welcome contributions from the community to enhance Marine Marvel. If you have any feature suggestions, bug reports, or code improvements, please feel free to submit a pull request or open an issue on GitHub.
+We welcome contributions from the community to enhance academic-assistant . If you have any feature suggestions, bug reports, or code improvements, please feel free to submit a pull request or open an issue on GitHub.
 
 
 
