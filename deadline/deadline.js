@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       addDoc(collection(db, "reminders"), { text: reminderText })
         .then(() => {
           console.log("Reminder added to Firestore!");
-          createReminderItem(reminderText); // Create UI element for the new reminder
+          createReminderItem(reminderText);
         })
         .catch((error) => {
           console.error("Error adding reminder:", error);
@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
   addReminderBtn.addEventListener('click', function () {
     const reminderText = document.getElementById('reminder-Text').value;
     if (reminderText) {
-      addReminder(reminderText) // Call the function with reminder text
+      addReminder(reminderText) 
         .then(() => {
-          document.getElementById('reminder-Text').value = ''; // Clear input field
+          document.getElementById('reminder-Text').value = ''; 
         })
         .catch((error) => {
             console.error('Error adding reminder:', error);
@@ -67,22 +67,22 @@ document.addEventListener('DOMContentLoaded', function () {
         var reminderInput = document.createElement('input');
         reminderInput.type = 'text';
         reminderInput.classList.add('reminder-input');
-        reminderInput.value = reminderText; // Pre-fill input with reminder text
+        reminderInput.value = reminderText; 
         var deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Delete';
         deleteBtn.classList.add('delete-btn');
         deleteBtn.addEventListener('click', function () {
-          const reminderId = reminderItem.dataset.reminderId; // Assuming you store ID in a data attribute
-          deleteReminder(reminderId); // Call function to delete from Firestore and UI
+          const reminderId = reminderItem.dataset.reminderId; 
+          deleteReminder(reminderId); 
         });
         reminderItem.appendChild(reminderInput);
         reminderItem.appendChild(deleteBtn);
         remindersList.appendChild(reminderItem);
-        reminderItem.dataset.reminderId = ""; // Placeholder for reminder ID (replace with actual ID)
+        reminderItem.dataset.reminderId = ""; 
       }
 
       function deleteReminder(reminderId) {
-        deleteDoc(doc(db, "reminders", reminderId)) // Replace with actual deletion logic based on ID
+        deleteDoc(doc(db, "reminders", reminderId)) 
           .then(() => {
             console.log("Reminder deleted from Firestore!");
             const reminderItem = document.querySelector(`.reminder-item[data-reminderId="${reminderId}"]`);
@@ -95,8 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
           });
       }
 
-    
-      // Optionally, listen for real-time changes in Firestore reminders
+  
       onSnapshot(remindersColRef, (snapshot) => {
         const reminders = [];
         snapshot.docs.forEach((doc) => {
@@ -104,15 +103,14 @@ document.addEventListener('DOMContentLoaded', function () {
           reminders.push(reminderData);
         });
     
-        // Update UI with reminders from Firestore (consider clearing existing reminders first)
-        remindersList.innerHTML = ""; // Example: Clear existing reminders before displaying new ones
+       
+        remindersList.innerHTML = "";
         reminders.forEach((reminder) => {
           createReminderItem(reminder.text);
         });
       });
     
 
-    // Initialize calendar
     var calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
         initialView: 'dayGridMonth',
         headerToolbar: {

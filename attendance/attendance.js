@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var coursesList = document.getElementById('courses-list');
     var overallAttendance = document.getElementById('overall-attendance');
 
-    // Initialize courses with attendance records
     var courses = [
         { name: 'Mathematics', attendance: { present: 0, absent: 0 } },
         { name: 'POE', attendance: { present: 0, absent: 0 } },
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: 'DTI', attendance: { present: 0, absent: 0 } }
     ];
 
-    // Initialize courses UI
     courses.forEach(function (course) {
         var courseItem = document.createElement('div');
         courseItem.classList.add('course-item');
@@ -41,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function markAttendance(course, date, isPresent) {
-        // Update attendance record for the course
         {
         if (isPresent) {
             course.attendance.present++;
@@ -49,12 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
             course.attendance.absent++;
         }
     }
-
-        // Update UI to reflect attendance record for the course
         var attendanceInfo = course.name + ': Present - ' + course.attendance.present + ', Absent - ' + course.attendance.absent;
         console.log(attendanceInfo);
 
-        // Calculate overall attendance percentage
         var totalPresent = 0;
         var totalAbsent = 0;
         courses.forEach(function (course) {

@@ -53,7 +53,6 @@ var addDetailsBtn = document.getElementById('add-details-btn');
           addExamDataToFirestore(examData);
         });
 
-        // Example of sending data to the server using fetch API
         var formData = new FormData();
         formData.append('subject', subject);
         formData.append('date', date);
@@ -66,25 +65,24 @@ var addDetailsBtn = document.getElementById('add-details-btn');
             body: formData
         })
         .then(function (response) {
-            // Handle response from the server
+           
             console.log('Exam details uploaded successfully.');
-            // You can redirect the user to another page or show a success message here
+        
         })
         .catch(function (error) {
             console.error('Error uploading exam details:', error);
-            // You can show an error message to the user here
         });
     });
     function addExamDataToFirestore(examData) {
-        const colRef = collection(db, 'exams'); // Reference to the 'exams' collection
+        const colRef = collection(db, 'exams'); 
         addDoc(colRef, examData)
           .then(() => {
             console.log("Exam details added to Firestore!");
-            // You can clear the form or show a success message here
+            
           })
           .catch((error) => {
             console.error("Error adding exam details to Firestore:", error);
-            // You can show an error message to the user here
+        
           });
       }
  

@@ -1,4 +1,4 @@
-/* Common styles for both pages */
+
 * {
     margin: 0;
     padding: 0;
@@ -47,15 +47,13 @@ footer {
     text-align: center;
 }
 
-/* Sign-in form styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ad6fccdf;
-    
-    justify-content: center; /* Align content horizontally */
-    align-items: center; /* Align content vertically */
-    height: 100vh; /* Full height of the viewport */
-}
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
 
 form {
     background-color: #fff;
@@ -115,3 +113,4 @@ button:hover {
     cursor: pointer;
 }
 
+}

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         expenseItem.appendChild(expenseAmount);
         expensesList.appendChild(expenseItem);
 
-        // Update total expenses
+
         var total = calculateTotalExpenses();
         totalExpenses.textContent = 'Total Expenses: ₹' + total.toFixed(2);
     }
@@ -58,12 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function addExpenseToFirestore(type, amount) {
-        const colRef = collection(db, 'expenses'); // Reference to the 'expenses' collection
+        const colRef = collection(db, 'expenses'); 
         addDoc(colRef, { type, amount })
           .then(() => {
             console.log("Expense added to Firestore!");
             for (i =0; i<4; i++)
-            addExpense(type, amount); // Add to local UI as well
+            addExpense(type, amount); 
           })
           .catch((error) => {
             console.error("Error adding expense to Firestore:", error);
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var type= document.getElementById('expense-type').value;;
         var amount =  parseFloat(document.getElementById('expense-amount').value);;
       
-        addExpenseToFirestore(type, amount ) // Returns a promise
+        addExpenseToFirestore(type, amount ) 
           .then(() => {
-            addExpense(type, amount); // Call after successful Firestore operation
+            addExpense(type, amount); 
         });
     });
 
