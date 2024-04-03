@@ -11,8 +11,9 @@ const firebaseConfig = {
     measurementId: "G-J6EFV6W9CC"
   };
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+ const app = initializeApp(firebaseConfig);
+ const db = getFirestore(app);
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -86,3 +87,4 @@ var addDetailsBtn = document.getElementById('add-details-btn');
             // You can show an error message to the user here
           });
       }
+ 
