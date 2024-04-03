@@ -34,7 +34,7 @@
       // The signed-in user info.
       const user = result.user;
       console.log(user);
-      window.location.href = "home/home.html";
+      window.location.href = "home.html";
       // IdP data available using getAdditionalUserInfo(result)
       // ...
     }).catch((error) => {
