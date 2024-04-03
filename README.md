@@ -52,6 +52,7 @@ Tap on "Exam Tracker" to view a detailed list of exams, set reminders, and mark 
 Use the "Expenses" section to record and categorize your spending.
 The "Attendance" page shows your attendance records and allows you to view class schedules.
 ![photo1](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/439bc712-febd-401f-98d5-bf5457c36a75)
+![photo2](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/708145de-3a64-4696-8859-1c4966a0f663)
 
 ### Contributing:
 
