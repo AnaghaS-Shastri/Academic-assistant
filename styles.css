@@ -48,6 +48,15 @@ footer {
 }
 
 /* Sign-in form styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ad6fccdf;
+    
+    justify-content: center; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
 form {
     background-color: #fff;
     padding: 20px;

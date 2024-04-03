@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, onSnapshot, deleteDoc } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, getDocs, onSnapshot, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyA1sUK7TYJ6wo4ZlXcHnaiqaVCs5MBeJwg",
@@ -39,32 +39,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const remindersColRef = collection(db, 'reminders');
 
     function addReminder(reminderText) {
-        addDoc(remindersColRef, { text: reminderText })
-          .then(() => {
-            console.log("Reminder added to Firestore!");
-            createReminderItem(reminderText); // Create UI element for the new reminder
-          })
-          .catch((error) => {
-            console.error("Error adding reminder:", error);
-          });
-      }
-      addReminderBtn.addEventListener('click', function () {
-        const submitButton = document.getElementById('submit-button');
-submitButton.addEventListener('click', function() {
-  // Code that might be causing the error
+      addDoc(collection(db, "reminders"), { text: reminderText })
+        .then(() => {
+          console.log("Reminder added to Firestore!");
+          createReminderItem(reminderText); // Create UI element for the new reminder
+        })
+        .catch((error) => {
+          console.error("Error adding reminder:", error);
+        });
+  }
+  addReminderBtn.addEventListener('click', function () {
+    const reminderText = document.getElementById('reminder-Text').value;
+    if (reminderText) {
+      addReminder(reminderText) // Call the function with reminder text
+        .then(() => {
+          document.getElementById('reminder-Text').value = ''; // Clear input field
+        })
+        .catch((error) => {
+            console.error('Error adding reminder:', error);
+        });
+    }
 });
-const reminderText = document.getElementById('reminder-Text').value;
-        if (reminderText) {
-          addReminder(reminderText) // Call the function with reminder text
-            .then(() => {
-              document.getElementById('reminder-Text').value = ''; 
-            })
-            .catch((error) => {
-                console.error('Error adding reminder:', error);// Clear input field
-            });
-        }
-
-    });
 
       function createReminderItem(reminderText) {
         var reminderItem = document.createElement('div');
