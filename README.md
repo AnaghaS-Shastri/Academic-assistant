@@ -2,53 +2,52 @@
  your one-stop hub for streamlining your educational endeavors!
 
 ACADEMIC-ASSISTANT empowers you to effortlessly manage your login, exams, expenses, and attendance, all within a user-friendly and visually appealing interface.
-
 ## A Seamless Login Experience!!!
 
-### Secure and Streamlined:
+1. ### Secure and Streamlined:
  Sign in conveniently using your Gmail ID, ensuring a secure and efficient login process.
  ![photo1](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/284fd64a-1b44-443c-9c9f-c3f4db2054ff)
 
 
 
-### Conquer Every Test:
+2. ### Conquer Every Test:
  Meticulously track upcoming exams, deadlines, and crucial study materials. Never miss a beat in your academic journey.
  ![photo2](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/708145de-3a64-4696-8859-1c4966a0f663)
 
 
-### Keep Your Finances in Check: 
+3. ### Keep Your Finances in Check: 
 Effortlessly record your expenses, categorize them systematically, and gain valuable insights into your spending habits.
 ![photo3](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/7bff8e10-d46c-4a62-a091-5fcd5b859409)
 
 
 
-### Stay on Top of Your Commitments:
+4. ### Stay on Top of Your Commitments:
  Never miss out on an important meeting or class again. Conveniently track your attendance and stay accountable.
 
 
-### Streamlined Workflow:
+5. ### Streamlined Workflow:
  Maintain a clear record of your attendance, eliminating the need for manual tracking or complex spreadsheets.
  ![photo4](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/b2f5d61f-d752-4e17-be9e-d0ca2f41402f)
 
 
 
-### Boost Productivity: 
+6. ### Boost Productivity: 
 Save valuable time by automating attendance tracking, allowing you to focus on more productive tasks.
 
 
 
-### Delightful Design:
+7. ### Delightful Design:
  Immerse yourself in a user interface that's both aesthetically pleasing and intuitive, making it a joy to use.
 
 
-### Enhanced User Experience:
+8. ### Enhanced User Experience:
  Navigate effortlessly through the app's features with a well-designed layout and clear visual cues.
 
 
 
-### We're passionate about helping you achieve your full potential. 
+9. ### We're passionate about helping you achieve your full potential. 
 
-## Prerequisites:
+10. ## Prerequisites:
  
  ### Frontend: Java Script,HTML and CSS.
  ### Backend: Google Firebase.
