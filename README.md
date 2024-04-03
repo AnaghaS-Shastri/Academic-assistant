@@ -7,14 +7,19 @@ ACADEMIC-ASSISTANT empowers you to effortlessly manage your login, exams, expens
 
 ### Secure and Streamlined:
  Sign in conveniently using your Gmail ID, ensuring a secure and efficient login process.
+ ![photo1](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/284fd64a-1b44-443c-9c9f-c3f4db2054ff)
+
 
 
 ### Conquer Every Test:
  Meticulously track upcoming exams, deadlines, and crucial study materials. Never miss a beat in your academic journey.
+ ![photo2](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/708145de-3a64-4696-8859-1c4966a0f663)
 
 
 ### Keep Your Finances in Check: 
 Effortlessly record your expenses, categorize them systematically, and gain valuable insights into your spending habits.
+![photo3](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/7bff8e10-d46c-4a62-a091-5fcd5b859409)
+
 
 
 ### Stay on Top of Your Commitments:
@@ -23,10 +28,13 @@ Effortlessly record your expenses, categorize them systematically, and gain valu
 
 ### Streamlined Workflow:
  Maintain a clear record of your attendance, eliminating the need for manual tracking or complex spreadsheets.
+ ![photo4](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/b2f5d61f-d752-4e17-be9e-d0ca2f41402f)
+
 
 
 ### Boost Productivity: 
 Save valuable time by automating attendance tracking, allowing you to focus on more productive tasks.
+
 
 
 ### Delightful Design:
@@ -51,10 +59,7 @@ The home page displays an overview of upcoming exams, recent expenses, and atten
 Tap on "Exam Tracker" to view a detailed list of exams, set reminders, and mark completed exams.
 Use the "Expenses" section to record and categorize your spending.
 The "Attendance" page shows your attendance records and allows you to view class schedules.
-![photo1](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/439bc712-febd-401f-98d5-bf5457c
-![photo2](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/708145de-3a64-4696-8859-1c4966a0f663)
-![photo3](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/7bff8e10-d46c-4a62-a091-5fcd5b859409)
-![photo4](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/b2f5d61f-d752-4e17-be9e-d0ca2f41402f)
+
 ![photo5](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/e4e4e69a-c208-4f0e-8d30-bc93040090a2)
 
 
