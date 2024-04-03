@@ -51,7 +51,7 @@ The home page displays an overview of upcoming exams, recent expenses, and atten
 Tap on "Exam Tracker" to view a detailed list of exams, set reminders, and mark completed exams.
 Use the "Expenses" section to record and categorize your spending.
 The "Attendance" page shows your attendance records and allows you to view class schedules.
-
+![photo1](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/439bc712-febd-401f-98d5-bf5457c36a75)
 <div style="display: flex; flex-wrap: wrap;">
 <img src style="width:200px; margin-right: 10px;">"assests/photo1.jpeg"</img src>
 <img src style="width:200px; margin-right: 10px;">"assests/photo2.jpeg"</img src>        
