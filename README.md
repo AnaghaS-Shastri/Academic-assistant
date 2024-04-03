@@ -46,6 +46,10 @@ Save valuable time by automating attendance tracking, allowing you to focus on m
 
 
  ### 9.  We're passionate about helping you achieve your full potential. 
+ This is the guideline vedio:
+ https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/715d972f-8e3d-4e41-9d9d-4e384e0074bd
+
+`
 
  ## 10. Prerequisites:
  
@@ -60,6 +64,7 @@ Use the "Expenses" section to record and categorize your spending.
 The "Attendance" page shows your attendance records and allows you to view class schedules.
 
 ![photo5](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/e4e4e69a-c208-4f0e-8d30-bc93040090a2)
+
 
 
 
