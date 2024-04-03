@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Common styles for both pages */
 * {
     margin: 0;
     padding: 0;
@@ -44,15 +44,6 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Sign-in form styles */
@@ -114,21 +105,3 @@ button:hover {
     cursor: pointer;
 }
 
-/* Header styles */
-header,
-main,
-footer {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-/* Display content after signing in */
-body.signed-in form {
-    opacity: 0;
-}
-
-body.signed-in header,
-body.signed-in main,
-body.signed-in footer {
-    opacity: 1;
-}

@@ -3,7 +3,6 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
   import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
-  // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
@@ -35,7 +34,7 @@
       // The signed-in user info.
       const user = result.user;
       console.log(user);
-      window.location.href = "home.html";
+      window.location.href = "home/home.html";
       // IdP data available using getAdditionalUserInfo(result)
       // ...
     }).catch((error) => {
@@ -50,3 +49,5 @@
     });
     
   })
+
+ 
