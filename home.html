@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="styles.css">
 <header>
-    <h1>Welcome to Varun's Academic Assistant</h1>
+    <h1>Welcome to Academic Assistant</h1>
     <nav>
         <ul>
             <li><a href="home.html">Home</a></li>
@@ -17,17 +17,21 @@
         <h2>User Information</h2>
         <input type="text" placeholder="name" id="name">
         <input type="text" placeholder="age" id="age">
+        <input type="text" placeholder="college" id="college">
+        <input type="text" placeholder="branch" id="branch">
+        <input type="text" placeholder="semester" id="semester">
         <div class="button_container">
-            <button id="submit" onclick="save()"> Submit</button>
+            <button id="submit" onclick="saveUserData()"> Submit</button>
         </div>
-        <p>Name: nameField</p>
-        <p>College: UVCE</p>
-        <p>Branch: Computer Science</p>
-        <p>Semester: 5</p>
+        <p>Name: <span id="displayedName"> </span></p>
+        <p>College:<span id="displayedAge"> </span></p>
+        <p>Branch:<span id="displayedCollege"> </span></p>
+        <p>Semester:<span id="displayedBranch"> </span></p>
+        <p>Semester:<span id="displayedSemester"> </span></p>
     </section>
 </main>
 <footer>
-    <p>&copy; 2024 Varun's Academic Assistant</p>
+    <p>&copy; 2024 Academic Assistant</p>
 </footer>
 <script defer type="module" src="home.module.js"> </script>
 

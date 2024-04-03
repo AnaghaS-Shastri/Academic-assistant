@@ -12,28 +12,61 @@ const firebaseConfig = {
   measurementId: "G-J6EFV6W9CC"
 };
 
+
 const app = initializeApp(firebaseConfig);
-const database = getFirestore(app);
+const db = getFirestore(app);
 
+// Function to save user data to Firestore
+function saveUserData() {
+    // Get the user input values
+    const name = document.getElementById('name').value;
+    const age = document.getElementById('age').value;
+    const college = document.getElementById('college').value;
+    const branch = document.getElementById('branch').value;
+    const semester = document.getElementById('semester').value;
 
+    document.getElementById('displayedName').textContent = name;
+    document.getElementById('displayedAge').textContent = age;
+    document.getElementById('displayedCollege').textContent = college;
+    document.getElementById('displayedBranch').textContent = branch;
+    document.getElementById('displayedSemester').textContent = semester;
 
-  const db = getFirestore(app);
+    document.getElementById('displayedName', displayedAge, displayedCollege, displayedBranch, displayedSemester).textContent = name,age,college,branch,semester;
+    // Add a new document with a generated id to the 'users' collection
+    addDoc(collection(db, "users"), {
+        name: name,
+        age: age,
+        college: college,
+        branch: branch,
+        semester: semester
+    })
+    .then(() => {
+        // Alert the user that the data was saved successfully
+        alert('User data saved successfully.');
+    })
+    .catch((error) => {
+        // Log any errors to the console
+        console.error("Error saving user data: ", error);
+    });
+}
+document.getElementById('submit').addEventListener('click', saveUserData);
+document.addEventListener('DOMContentLoaded', function(){
 
+const userForm = document.getElementById('submit'); // Assuming your form has this ID
+
+userForm.addEventListener('submit', function (event) {
+  event.preventDefault(); 
+  const name = document.getElementById('name').value;
+  const age = document.getElementById('age').value;
+  const college = document.getElementById('college').value;
+  const branch = document.getElementById('branch').value;
+  const semester = document.getElementById('semester').value;
   
-  
-  db.collection('users').get().then((snapshot) =>{
-    snapshot.docs.forEach(doc =>
-      {
-        console.log(doc.data())
-      })
-  });
- 
-  function save() {
-    var name = document.getElementById('name').value
-    var age = document.getElementById('age').value
-  }
-  database.ref('users/' + username).ser({
-    name: nameField,
-    age: age,
-  })
-  alert('Saved successfully')
+  if (name === null || name.trim() === '' || age === null || age.trim() === '') {
+    // Handle null or empty values (e.g., show an alert)
+    alert('Please enter both name and age.');
+    return; 
+  }// Prevent default form submission behavior
+  saveUserData(name, age,college, branch, semester);
+});
+});

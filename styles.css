@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: #ad6fccdf;
 }
 
 header {
@@ -83,7 +84,7 @@ input[type="password"] {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #4eca86;
     color: #fff;
     border: none;
     border-radius: 4px;

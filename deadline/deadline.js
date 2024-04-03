@@ -49,11 +49,18 @@ document.addEventListener('DOMContentLoaded', function () {
           });
       }
       addReminderBtn.addEventListener('click', function () {
-        const reminderText = document.getElementById('reminder-Text').value;
+        const submitButton = document.getElementById('submit-button');
+submitButton.addEventListener('click', function() {
+  // Code that might be causing the error
+});
+const reminderText = document.getElementById('reminder-Text').value;
         if (reminderText) {
           addReminder(reminderText) // Call the function with reminder text
             .then(() => {
-              document.getElementById('reminder-input').value = ''; // Clear input field
+              document.getElementById('reminder-Text').value = ''; 
+            })
+            .catch((error) => {
+                console.error('Error adding reminder:', error);// Clear input field
             });
         }
 
@@ -93,17 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
           });
       }
 
-      /*addReminderBtn.addEventListener('click', function () {
-        const reminderInput = document.getElementById('reminder-input').value; // Assuming input ID
-        if (reminderInput) {
-            const reminderText = reminderInput.value;
-          addReminder(reminderText);
-          document.getElementById('reminder-input').value = ''; // Clear input field
-        }
-        else{
-            console.error("Reminder input element not");
-        }
-      });*/
     
       // Optionally, listen for real-time changes in Firestore reminders
       onSnapshot(remindersColRef, (snapshot) => {

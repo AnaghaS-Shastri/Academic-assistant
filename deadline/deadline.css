@@ -1,6 +1,6 @@
 ody {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ad6fccdf;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@ ody {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #db7070;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -35,7 +35,7 @@ h1 {
 .add-reminder-btn {
     padding: 10px 20px;
     background-color: #007bff;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
