@@ -42,17 +42,15 @@ Effortlessly record your expenses, categorize them systematically, and gain valu
  ### Frontend: Java Script,HTML and CSS.
  ### Backend: Google Firebase.
 
- Upon Launching, it asks for Gmail Id.
-This works based on the firebase Authentication with Google.
+Our backend server works with  RealTime Analysis. This can be used even in offline mode and will be updated as soon as the user goes Online. 
+The backend doesn't needs to be refreshed every time for any changes that occurs. It automatically gets updated whenever a change or input occurs by the user. 
+Having this advantage compared to other backend servers, our website will run smooth and secured and will be user friendly.
 
-Home page displays an overview of basic information about the user which will be stored in the backend collections 'users' of Firestore.
-
-Exam Tracker helps to view a detailed list of upcoming exams as saved by the user which will be stored in the backend Collections.
-
-The Expense page helps in calculation of total expenses we did for an academic year and it will be stored in the firebase with expense as a collection that can be retrieved whenever required.
 
 ![photo5](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/e4e4e69a-c208-4f0e-8d30-bc93040090a2)
 ![photo6](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/1ae29249-f19c-44a5-93e0-eff414d78f43)
+![photo7](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/8c6a75d6-2bfd-4619-bfa4-60bfcd99ca19)
+
 
 
 
