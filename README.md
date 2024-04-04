@@ -31,20 +31,6 @@ Effortlessly record your expenses, categorize them systematically, and gain valu
 
 
 
- ### 6. Boost Productivity: 
-Save valuable time by automating attendance tracking, allowing you to focus on more productive tasks.
-
-
-
- ### 7. Delightful Design:
- Immerse yourself in a user interface that's both aesthetically pleasing and intuitive, making it a joy to use.
-
-
- ### 8.  Enhanced User Experience:
- Navigate effortlessly through the app's features with a well-designed layout and clear visual cues.
-
-
-
  ### 9.  We're passionate about helping you achieve your full potential. 
  This is the guideline vedio:
  https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/715d972f-8e3d-4e41-9d9d-4e384e0074bd
@@ -56,14 +42,17 @@ Save valuable time by automating attendance tracking, allowing you to focus on m
  ### Frontend: Java Script,HTML and CSS.
  ### Backend: Google Firebase.
 
+ Upon Launching, it asks for Gmail Id.
+This works based on the firebase Authentication with Google.
 
-Upon launching th, you'll be presented with a login screen. Enter your Gmail ID to sign in.
-The home page displays an overview of upcoming exams, recent expenses, and attendance data.
-Tap on "Exam Tracker" to view a detailed list of exams, set reminders, and mark completed exams.
-Use the "Expenses" section to record and categorize your spending.
-The "Attendance" page shows your attendance records and allows you to view class schedules.
+Home page displays an overview of basic information about the user which will be stored in the backend collections 'users' of Firestore.
+
+Exam Tracker helps to view a detailed list of upcoming exams as saved by the user which will be stored in the backend Collections.
+
+The Expense page helps in calculation of total expenses we did for an academic year and it will be stored in the firebase with expense as a collection that can be retrieved whenever required.
 
 ![photo5](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/e4e4e69a-c208-4f0e-8d30-bc93040090a2)
+
 
 
 
