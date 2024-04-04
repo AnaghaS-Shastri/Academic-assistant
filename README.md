@@ -52,6 +52,7 @@ Exam Tracker helps to view a detailed list of upcoming exams as saved by the use
 The Expense page helps in calculation of total expenses we did for an academic year and it will be stored in the firebase with expense as a collection that can be retrieved whenever required.
 
 ![photo5](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/e4e4e69a-c208-4f0e-8d30-bc93040090a2)
+![photo6](https://github.com/AnaghaS-Shastri/Academic-assistant/assets/149923878/1ae29249-f19c-44a5-93e0-eff414d78f43)
 
 
 
